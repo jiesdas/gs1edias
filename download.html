@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+*{
+font-family: 'Roboto Mono', monospace;
+}
+div.dder{
+background-color: #595555;
+color:white;
+border: 5px solid;
+border-radius:25px;
+border-color: lightgray;
+}
+div.middle{
+color: orange;
+border: 3px solid;
+border-color: orange;
+border-radius:25px;
+}
+img.arrow{
+animation: arrow 1s;
+position: absolute;
+top:280px;
+animation-iteration-count: infinite;
+}
+@keyframes arrow{
+0%{position: absolute; top:250px;}
+50%{position: absolute; top:350px;}
+100%{position: absolute; top:250px;}
+}
+</style>
+<script>
+function voice(){
+new Audio("voice.mp3").play();
+}
+window.onload = function(){
+window.location = 'Your File Is Ready.zip';}
+</script>
+</head>
+<body onclick="voice()">
+<div style="text-align:center;" onclick="voice()">
+<div class="dder">
+<p><b style="font-family: 'Arial';">Downloader</b></p><img src="https://i.pinimg.com/originals/fc/a8/cc/fca8ccfc8f4af4188f554b0b0a6e1e3d.png" width="50" height="50" class="wback"><h6 style="position:absolute;top:50px;left:44%;"><i>Verified</i></p>
+</div>
+<div class="middle">
+<p> Your File Is Ready.zip</p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaBBpkH-kYh4qKqTWpc6XstzYKlVQzKxNA5FDrHrg&s" width="50" height="50" style="position: absolute;top:130px; left:60%;"></div></div>
+<img class="arrow" src="https://media.istockphoto.com/id/1221780494/vector/simple-black-arrow-down-symbol.jpg?s=612x612&w=0&k=20&c=X13fx0mfsE7pDsEr1_pjdCaYVsuMq9lII0vmVoDaR2A=" width="200" height="200">
+</body>
+</html>
